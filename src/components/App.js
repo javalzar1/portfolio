@@ -1,18 +1,16 @@
 import '../styles/App.css';
 import Intro from './Intro';
+import About from './About';
+import Portfolio from './Portfolio';
 
 function App() {
 	return (
 		<div className='App'>
 			<Intro />
 
-			<section className='s2'>
-				<div className='main-container'>About</div>
-			</section>
+			<About />
 
-			<section className='s1'>
-				<div className='main-container'>Portfolio</div>
-			</section>
+			<Portfolio />
 
 			<section className='s2'>
 				<div className='main-container'>Contact</div>
