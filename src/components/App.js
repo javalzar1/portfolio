@@ -2,6 +2,7 @@ import '../styles/App.css';
 import Intro from './Intro';
 import About from './About';
 import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 function App() {
 	return (
@@ -12,9 +13,7 @@ function App() {
 
 			<Portfolio />
 
-			<section className='s2'>
-				<div className='main-container'>Contact</div>
-			</section>
+			<Contact />
 		</div>
 	);
 }
