@@ -10,12 +10,15 @@
 	--previewBg: rgb(251, 249, 243, 0.8);
 	--previewShadow: #f0ead6;
 	--buttonColor: black;
+
+	--themeDotBorder: #24292e;
 }
 
 html,
 body {
 	padding: 0;
 	margin: 0;
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -117,10 +120,15 @@ h6 {
 	margin: 0;
 	padding: 10px;
 }
+
 #navigation li {
 	display: inline-block;
 	margin-right: 5px;
 	margin-left: 5px;
+}
+
+#navigation a {
+	color: black;
 }
 
 .dots-wrapper {
@@ -162,6 +170,45 @@ h6 {
 	width: 200px;
 	object-fit: cover;
 	border: 2px solid var(--borderColor);
+}
+
+#theme-options-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.theme-dot {
+	height: 30px;
+	width: 30px;
+	background-color: black;
+	border-radius: 50%;
+
+	margin: 5px;
+	border: 2px solid var(--themeDotBorder);
+
+	box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
+	cursor: pointer;
+}
+
+.theme-dot:hover {
+	border-width: 5px;
+}
+
+#light-mode {
+	background-color: #fff;
+}
+
+#dark-mode {
+	background-color: rgb(58, 58, 58);
+}
+
+#theme-note {
+	text-align: center;
+	font: 12px;
+	font-style: italic;
 }
 
 .right-column {
@@ -229,6 +276,10 @@ h6 {
 	display: flex;
 	justify-content: space-evenly;
 	background-color: var(--previewShadow);
+}
+
+#skills ul {
+	list-style-type: none;
 }
 
 .social-links {

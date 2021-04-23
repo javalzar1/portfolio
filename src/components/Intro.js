@@ -18,16 +18,26 @@ const Intro = () => {
 
 						<ul id='navigation'>
 							<li>
-								<a href='#'>About</a>
+								<a href='#about'>About</a>
 							</li>
 							<li>
-								<a href='#'>Porfolio</a>
+								<a href='#portfolio'>Porfolio</a>
+							</li>
+							<li>
+								<a href='#contact'>Contact</a>
 							</li>
 						</ul>
 					</div>
 
 					<div className='left-column'>
 						<img id='profile-pic' src='./assets/profile.jpg' alt='profile' />
+						<h5 style={{ 'text-align': 'center', 'line-height': 0 }}>Pick a Theme</h5>
+
+						<div id='theme-options-wrapper'>
+							<div id='light-mode' class='theme-dot'></div>
+							<div id='dark-mode' class='theme-dot'></div>
+						</div>
+						<p style={{ 'text-align': 'center', 'line-height': 0 }}>Dark mode all things</p>
 					</div>
 
 					<div className='right-column'>

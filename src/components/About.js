@@ -3,17 +3,18 @@ const About = () => {
 		<section className='s2'>
 			<div className='main-container'>
 				<div className='about-wrapper'>
-					<div className='about-me'>
+					<div id='about' className='about-me'>
 						<h4>More About Me</h4>
 
 						<p>
-							Aliquip dolor deserunt aliqua excepteur incididunt fugiat amet sunt veniam incididunt fugiat
-							consectetur voluptate.
+							Do you remember MySpace? Way back when you could customize your page? Well I do and I
+							remeber tinkering with the themes and the laytouts and in a way that was the first time I
+							touched code!{' '}
 						</p>
 
 						<p>
-							Amet anim tempor elit consequat fugiat minim ex incididunt. Ullamco in pariatur qui dolor
-							labore esse sunt ad ipsum nostrud ex eiusmod aliqua.
+							Fast forward a B.S. in Computer Science later, a recent Hack Reactor Grad, I am making a
+							career out of this 'coding thing'.
 						</p>
 						<hr />
 
@@ -48,7 +49,7 @@ const About = () => {
 					<div className='social-links'>
 						<img id='social-image' src='./assets/twitter.png' alt='twitter' />
 						<h3>Find me on Twitter! </h3>
-						<a target='_blank' href='#'>
+						<a target='_blank' rel='noreferrer' href='https://twitter.com/JavTheDeveloper'>
 							Twitter: @JavTheDeveloper
 						</a>
 					</div>
