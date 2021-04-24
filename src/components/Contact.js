@@ -2,23 +2,23 @@ const Contact = () => {
 	return (
 		<section id='contact' className='s2'>
 			<div className='main-container'>
-				<h3 style={{ textAlign: 'center' }}>Get in Touch</h3>
+				<div className='contact-wrapper'>
+					<div className='email'>
+						<img src='./assets/email.svg' alt='email' />
+					</div>
 
-				<form id='contact-form'>
-					<label>Name</label>
-					<input className='input-field' type='text' name='name' />
+					<div className='linkedIn'>
+						<img src='./assets/linkedin.svg' alt='linkedIn' />
+					</div>
 
-					<label>Subject</label>
-					<input className='input-field' type='text' name='subject' />
+					<div className='Github'>
+						<img src='./assets/github.svg' alt='github' />
+					</div>
 
-					<label>Email</label>
-					<input className='input-field' type='text' name='message' />
-
-					<label>Message</label>
-					<textarea className='input-field' name='message' />
-
-					<input id='submit-btn' type='submit' value='Send' />
-				</form>
+					<div className='Twitter'>
+						<img src='./assets/twitter.svg' alt='email' />
+					</div>
+				</div>
 			</div>
 		</section>
 	);

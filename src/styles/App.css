@@ -1,5 +1,5 @@
 :root {
-	--mainColor: #eaeaea;
+	--mainColor: #eaeaeab5;
 	--secondaryColor: #fff;
 
 	--borderColor: #c1c1c1;
@@ -367,6 +367,27 @@ h6 {
 	color: #fff;
 	background-color: var(--buttonColor);
 	border: none;
+}
+
+.contact-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 15em 15em;
+	justify-items: center;
+	align-items: center;
+	grid-gap: 3em;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.contact-wrapper img {
+	height: 100px;
+	width: 100px;
+}
+.contact-wrapper img:hover {
+	height: 120px;
+	width: 120px;
+	transition: 0.1s ease-in;
 }
 
 @media screen and (max-width: 1200px) {

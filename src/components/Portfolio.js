@@ -24,7 +24,7 @@ const Portfolio = () => {
 					</div>
 
 					<div className='post'>
-						<img className='thumbnail' src='./assets/profile.jpg' />
+						<img className='thumbnail' src='./assets/profile.jpg' alt='profile' />
 						<div className='post-preview'>
 							<h6 className='post-title'> Post Title</h6>
 							<p className='post-intro'>This is a sentence.</p>
