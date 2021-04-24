@@ -31,13 +31,13 @@ const Intro = () => {
 
 					<div className='left-column'>
 						<img id='profile-pic' src='./assets/profile.jpg' alt='profile' />
-						<h5 style={{ 'text-align': 'center', 'line-height': 0 }}>Pick a Theme</h5>
+						<h5 style={{ textAlign: 'center', lineHeight: 0 }}>Pick a Theme</h5>
 
 						<div id='theme-options-wrapper'>
-							<div id='light-mode' class='theme-dot'></div>
-							<div id='dark-mode' class='theme-dot'></div>
+							<div id='light-mode' className='theme-dot'></div>
+							<div id='dark-mode' className='theme-dot'></div>
 						</div>
-						<p style={{ 'text-align': 'center', 'line-height': 0 }}>Dark mode all things</p>
+						<p style={{ textAlign: 'center', lineHeight: 0 }}>Dark mode all things</p>
 					</div>
 
 					<div className='right-column'>

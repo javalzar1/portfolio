@@ -2,7 +2,7 @@ const Portfolio = () => {
 	return (
 		<section id='portfolio' className='s1'>
 			<div className='main-container'>
-				<h3 style={{ 'text-align': 'center' }}>Check out my work</h3>
+				<h3 style={{ textAlign: 'center' }}>Check out my work</h3>
 
 				<div className='post-wrapper'>
 					<div className='post'>

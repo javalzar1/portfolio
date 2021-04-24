@@ -2,7 +2,7 @@ const Contact = () => {
 	return (
 		<section id='contact' className='s2'>
 			<div className='main-container'>
-				<h3 style={{ 'text-align': 'center' }}>Get in Touch</h3>
+				<h3 style={{ textAlign: 'center' }}>Get in Touch</h3>
 
 				<form id='contact-form'>
 					<label>Name</label>
