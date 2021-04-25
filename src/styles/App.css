@@ -373,21 +373,42 @@ h6 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 15em 15em;
+	grid-template-areas:
+		'contact-item contact-item'
+		'contact-item contact-item';
+
 	justify-items: center;
 	align-items: center;
 	grid-gap: 3em;
+
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
+
+.contact-item {
+	/* grid-area: contact-item; */
+	border: 1px solid black;
+	padding: 10px 100px 50px 100px;
 }
 
 .contact-wrapper img {
 	height: 100px;
 	width: 100px;
 }
+
+.contact-wrapper h6 {
+	text-align: center;
+}
+
 .contact-wrapper img:hover {
 	height: 120px;
 	width: 120px;
 	transition: 0.1s ease-in;
+}
+
+footer {
+	text-align: center;
+	padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -408,4 +429,12 @@ h6 {
 	.right-column {
 		justify-content: center;
 	}
+
+	/* .contact-wrapper {
+		grid-template-areas:
+			'contact-item'
+			'contact-item'
+			'contact-item'
+			'contact-item';
+	} */
 }
