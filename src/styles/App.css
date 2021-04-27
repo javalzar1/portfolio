@@ -382,3 +382,16 @@ footer {
 		padding-bottom: 3em;
 	}
 }
+
+@media screen and (max-width: 375px) {
+	#navigation {
+		font-size: 15px;
+	}
+	#preview-shadow {
+		padding-top: 15px;
+		padding-left: 15px;
+	}
+	.preview {
+		width: 260px;
+	}
+}
