@@ -7,21 +7,23 @@ const About = () => {
 						<h4>More About Me</h4>
 
 						<p>
-							Do you remember MySpace? Way back when you could customize your page? Well I do and I
-							remeber tinkering with the themes and the laytouts and in a way that was the first time I
-							touched code!{' '}
+							I was almost a physicist. Bill Nye the science guy is to blame. Starting out on my degree I
+							took an intro to programming course and I am sorry Bill but I had to switch up! I SPRINTED
+							to the office to switch majors. I love how you can make just about anything out of code.
+							Programming is like a puzzle and the answer is there you just have to figure it out.
 						</p>
 
 						<p>
-							Fast forward a B.S. in Computer Science later, a recent Hack Reactor Grad, I am making a
-							career out of this 'coding thing'.
+							Fast forward a B.S. in Computer Science later, a recent Hack Reactor Grad, a degree was not
+							enough I wanted more! I am making a career out of this coding thing.
 						</p>
-						<hr />
+					</div>
 
+					<div className='skills'>
 						<h4>TOP EXPERTISE</h4>
 
 						<p>
-							Fullstack developer with a focus on React and Node.{' '}
+							Fullstack developer with a focus on React.js and Node.{' '}
 							<a target='_blank' href='./assets/Javier_Zarate.pdf'>
 								Download Resume
 							</a>
@@ -30,13 +32,14 @@ const About = () => {
 						<div id='skills'>
 							<ul>
 								<li>JavaScript</li>
+								<li>HTML/CSS</li>
 								<li>Express</li>
 								<li>React</li>
 								<li>Node</li>
 								<li>MongoDB</li>
-								<li>C++</li>
 							</ul>
 							<ul>
+								<li>C++</li>
 								<li>Python</li>
 								<li>HTML/CSS</li>
 								<li>AWS</li>
@@ -44,14 +47,6 @@ const About = () => {
 								<li>MySQL</li>
 							</ul>
 						</div>
-					</div>
-
-					<div className='social-links'>
-						<img id='social-image' src='./assets/twitter.png' alt='twitter' />
-						<h3>Find me on Twitter! </h3>
-						<a target='_blank' rel='noreferrer' href='https://twitter.com/JavTheDeveloper'>
-							Twitter: @JavTheDeveloper
-						</a>
 					</div>
 				</div>
 			</div>

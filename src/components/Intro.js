@@ -4,10 +4,6 @@ const Intro = () => {
 	return (
 		<section className='s1'>
 			<div className='main-container'>
-				<div className='greeting-wrapper'>
-					<h1>Hi, I'm Javier Zarate</h1>
-				</div>
-
 				<div className='intro-wrapper'>
 					<div className='nav-wrapper'>
 						<div className='dots-wrapper'>
@@ -26,18 +22,16 @@ const Intro = () => {
 							<li>
 								<a href='#contact'>Contact</a>
 							</li>
+							<li>
+								<a target='_blank' href='./assets/Javier_Zarate.pdf'>
+									Resume
+								</a>
+							</li>
 						</ul>
 					</div>
 
 					<div className='left-column'>
 						<img id='profile-pic' src='./assets/profile.jpg' alt='profile' />
-						<h5 style={{ textAlign: 'center', lineHeight: 0 }}>Pick a Theme</h5>
-
-						<div id='theme-options-wrapper'>
-							<div id='light-mode' className='theme-dot'></div>
-							<div id='dark-mode' className='theme-dot'></div>
-						</div>
-						<p style={{ textAlign: 'center', lineHeight: 0 }}>Dark mode all things</p>
 					</div>
 
 					<div className='right-column'>
@@ -45,8 +39,12 @@ const Intro = () => {
 							<div className='preview'>
 								<div id='corner-tl' className='corner'></div>
 								<div id='corner-tr' className='corner'></div>
-								<h3>Software Engineer</h3>
-								<p>A master is always a student. Software Engineer learning something new every day!</p>
+								<h3>My name is Javier</h3>
+								<p>
+									I am a full-stack software engineer. I am eager to be challenged and ready to work!
+									Let's build something together! Feel free to <a href='#contact'>reach out</a>.
+								</p>
+								<p></p>
 								<div id='corner-bl' className='corner'></div>
 								<div id='corner-br' className='corner'></div>
 							</div>
