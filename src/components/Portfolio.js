@@ -10,7 +10,7 @@ const Portfolio = () => {
 						<div className='post-preview'>
 							<h6 className='post-title'>Scarebnb</h6>
 							<p className='post-intro'>Online vacation rental marketplace with a spooky twist.</p>
-							<form action='https://github.com/hrr50-airbnb-clone/javier-air-bnb-clone'>
+							<form action='https://github.com/hrr50-airbnb-clone/javier-air-bnb-clone' target='_blank'>
 								<input className='button' type='submit' value='Code' />
 							</form>
 						</div>
@@ -23,7 +23,10 @@ const Portfolio = () => {
 							<p className='post-intro'>
 								Homegoods Marketplace for purchasing home furniture, decor and outdoor goods.
 							</p>
-							<form action='https://github.com/the-expressionists/Javier-Main-Description'>
+							<form
+								action='https://github.com/the-expressionists/Javier-Main-Description'
+								target='_blank'
+							>
 								<input className='button' type='submit' value='Code' />
 							</form>
 						</div>
