@@ -7,7 +7,7 @@
 	--mainText: black;
 	--secondaryText: #4b5156;
 
-	--previewBg: rgb(251, 249, 243, 0.8);
+	--previewBg: rgba(244, 250, 250, 0.728);
 	--previewShadow: #d6e6f0;
 }
 
@@ -243,59 +243,84 @@ h6 {
 	text-align: center;
 }
 
-#social-image {
-	width: 100%;
-}
-
 .post-wrapper {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 320px);
-	gap: 20px;
+	grid-template-rows: repeat(auto-fit, 320px);
+	gap: 50px;
 	justify-content: center;
 	padding-bottom: 50px;
 }
 
 .post {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 'post-preview thumbnail';
+	grid-gap: 1em;
+
+	background-color: #fff;
+
 	border: 1px solid var(--borderColor);
 	box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
 
-.post:hover {
-	transform: scale(1.05);
-}
-
-.thumbnail {
-	display: block;
-	width: 100%;
-	height: 180px;
-	object-fit: cover;
-}
-
 .post-preview {
+	grid-area: post-preview;
 	background-color: #fff;
-	padding: 15px;
+	padding: 25px 0px 25px 25px;
 }
 
 .post-title {
 	color: black;
 	margin: 0;
+	font-weight: 520;
 }
 
 .post-intro {
 	color: #4b5156;
 	font-size: 14px;
+	padding-right: 20px;
+}
+
+.post-content {
+	color: #4b5156;
+	font-size: 20px;
+	padding-left: 5px;
+	padding-bottom: 15px;
 }
 
 .button {
 	border: 1px solid var(--borderColor);
-	border-radius: 12px;
-	padding: 2px 10px 2px 10px;
-	background-color: var(--mainColor);
-	box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-	-webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	border-radius: 5px;
+	padding: 12px 25px 12px 25px;
+	font: inherit;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	color: #fff;
+	background-color: #6c757d;
+}
+
+.button:hover {
+	background-color: #5b6065;
+}
+
+.thumbnail {
+	grid-area: thumbnail;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+.thumbnail img {
+	height: auto;
+	width: auto;
+	max-width: 400px;
+	max-height: 400px;
+	/* object-fit: cover; */
+	border: 1px solid var(--borderColor);
+	border-radius: 5px;
 }
 
 .contact-wrapper {
@@ -307,9 +332,6 @@ h6 {
 		'. email linkedin .'
 		'. github twitter .'
 		'. . . .';
-
-	justify-items: center;
-	align-items: center;
 	grid-gap: 3em;
 }
 
@@ -327,11 +349,19 @@ h6 {
 }
 
 .contact-item {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+
 	border: 1px solid var(--borderColor);
 	box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-	padding: 10px 100px 50px 100px;
+
+	width: 300px;
+	max-width: 300px;
+	padding-bottom: 40px;
+	background-color: var(--mainColor);
 }
 
 .contact-item:hover {
@@ -358,6 +388,20 @@ footer {
 	}
 }
 
+@media screen and (max-width: 1000px) {
+	.thumbnail img {
+		max-width: 350px;
+		max-height: 350px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.thumbnail img {
+		max-width: 325px;
+		max-height: 325px;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.intro-wrapper {
 		grid-template-columns: 1fr;
@@ -370,16 +414,43 @@ footer {
 	.right-column {
 		justify-content: center;
 	}
+	.post-wrapper {
+		grid-template-rows: auto;
+	}
+	.post {
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		grid-template-areas:
+			'post-preview'
+			'thumbnail';
+		padding-bottom: 25px;
+	}
+
+	.post-content {
+		padding-right: 25px;
+	}
+
+	.button {
+		width: 95%;
+	}
+
+	.thumbnail img {
+		max-width: 95%;
+		max-height: 95%;
+	}
 
 	.contact-wrapper {
-		grid-template-rows: 30px 1fr 1fr 1fr;
-		grid-template-areas:
-			'. . . . '
-			'. email email .'
-			'.  linkedin linkedin .'
-			'. github github .'
-			'. twitter twitter .';
-		padding-bottom: 3em;
+		grid-gap: 2em;
+		padding-bottom: 2em;
+	}
+
+	.contact-item {
+		width: 180px;
+		max-width: 180px;
+	}
+	.contact-wrapper img {
+		height: 80px;
+		width: 80px;
 	}
 }
 
@@ -393,5 +464,17 @@ footer {
 	}
 	.preview {
 		width: 260px;
+	}
+	.contact-wrapper {
+		grid-gap: 1.5em;
+	}
+	.contact-item {
+		width: 130px;
+		max-width: 130px;
+		padding: 0 0px 30px 0px;
+	}
+	.contact-wrapper img {
+		height: 70px;
+		width: 70px;
 	}
 }

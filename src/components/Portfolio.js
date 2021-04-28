@@ -6,22 +6,34 @@ const Portfolio = () => {
 
 				<div className='post-wrapper'>
 					<div className='post'>
-						<img className='thumbnail' alt='scarebnb' src='./assets/scarebnb.png' />
 						<div className='post-preview'>
-							<h6 className='post-title'>Scarebnb</h6>
-							<p className='post-intro'>Online vacation rental marketplace with a spooky twist.</p>
+							<h4 className='post-title'>Scarebnb</h4>
+							<p className='post-intro'>
+								<b>Made with:</b> JavaScript, React.js, Express, MySQL, Node.js, HTML, CSS, AWS
+							</p>
+							<p className='post-content'>
+								Scarebnb is an online vacation rental marketplace with a mysterious twist. A full-stack
+								app for those who want to book a spooky fun get away.{' '}
+							</p>
 							<form action='https://github.com/hrr50-airbnb-clone/javier-air-bnb-clone' target='_blank'>
 								<input className='button' type='submit' value='Code' />
 							</form>
 						</div>
+						<div className='thumbnail'>
+							<img alt='scarebnb' src='./assets/scarebnb.png' />
+						</div>
 					</div>
 
 					<div className='post'>
-						<img className='thumbnail' alt='JTWENL' src='./assets/JTWENL.png' />
 						<div className='post-preview'>
-							<h6 className='post-title'> JTWENL</h6>
+							<h4 className='post-title'> JTWENL</h4>
 							<p className='post-intro'>
-								Homegoods Marketplace for purchasing home furniture, decor and outdoor goods.
+								<b>Made with:</b> JavaScript, React.js, Express, PostgreSQL, Node.js, HTML, CSS, AWS
+							</p>
+							<p className='post-content'>
+								JTWENL is a homegoods Marketplace for purchasing home furniture, decor and outdoor
+								goods. A full-stack app scaled to handle millions of products and large amounts of
+								traffic.
 							</p>
 							<form
 								action='https://github.com/the-expressionists/Javier-Main-Description'
@@ -30,13 +42,8 @@ const Portfolio = () => {
 								<input className='button' type='submit' value='Code' />
 							</form>
 						</div>
-					</div>
-
-					<div className='post'>
-						<img className='thumbnail' src='./assets/profile.jpg' alt='profile' />
-						<div className='post-preview'>
-							<h6 className='post-title'> Post Title</h6>
-							<p className='post-intro'>This is a sentence.</p>
+						<div className='thumbnail'>
+							<img alt='JTWENL' src='./assets/JTWENL.png' />
 						</div>
 					</div>
 				</div>
