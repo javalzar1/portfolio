@@ -41,7 +41,7 @@ const Intro = () => {
 								<div id='corner-tr' className='corner'></div>
 								<h3>My name is Javier</h3>
 								<p>
-									I am a full-stack software engineer. I am eager to be challenged and ready to work!
+									I am a full-stack software engineer. I am eager to be challenged and ready to work.
 									Let's build something together! Feel free to <a href='#contact'>reach out</a>.
 								</p>
 								<p></p>
