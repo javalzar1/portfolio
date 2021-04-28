@@ -24,7 +24,7 @@ const About = () => {
 						<h4>TOP EXPERTISE</h4>
 
 						<p>
-							Fullstack developer with a focus on React.js and Node.{' '}
+							Fullstack developer with a focus on React.js and Node. <br />
 							<a target='_blank' href='./assets/Javier_Zarate.pdf'>
 								Download Resume
 							</a>
