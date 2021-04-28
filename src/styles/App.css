@@ -462,7 +462,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
 	#navigation {
 		font-size: 15px;
 	}
@@ -503,5 +503,50 @@ footer {
 	.contact-wrapper img {
 		height: 70px;
 		width: 70px;
+	}
+}
+@media screen and (max-width: 360px) {
+	#navigation {
+		font-size: 10px;
+		font-weight: 600;
+	}
+	#preview-shadow {
+		width: 180px;
+		height: 180px;
+		padding-left: 30px;
+		padding-top: 30px;
+	}
+
+	.preview {
+		width: 180px;
+		padding: 15px;
+		position: relative;
+	}
+	.preview h3 {
+		font-size: 21px;
+	}
+	.about-wrapper {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+	#skills {
+		justify-content: left;
+		margin-right: 15px;
+	}
+	.post-wrapper {
+		padding: 5px;
+		padding-bottom: 25px;
+	}
+
+	.contact-wrapper {
+		grid-gap: 1em;
+	}
+	.contact-item {
+		width: 120px;
+		max-width: 120px;
+		padding: 0 0px 30px 0px;
+	}
+	.contact-wrapper img {
+		height: 50px;
+		width: 50px;
 	}
 }
