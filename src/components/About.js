@@ -3,7 +3,7 @@ const About = () => {
 		<section className='s2'>
 			<div className='main-container'>
 				<div className='about-wrapper'>
-					<div>
+					<div id='about'>
 						<h4>More About Me</h4>
 
 						<p>

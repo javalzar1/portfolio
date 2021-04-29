@@ -1,4 +1,3 @@
-import '../styles/App.css';
 import Intro from './Intro';
 import About from './About';
 import Portfolio from './Portfolio';
