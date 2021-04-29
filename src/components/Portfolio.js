@@ -15,7 +15,7 @@ const Portfolio = () => {
 								Scarebnb is an online vacation rental marketplace with a mysterious twist. A full-stack
 								app for those who want to book a spooky fun get away.{' '}
 							</p>
-							<form action='https://github.com/scarebnb/scarebnb-reviews' target='_blank'>
+							<form action='https://github.com/scarebnb/scarebnb-reviews/' target='_blank'>
 								<input className='button' type='submit' value='Code' />
 							</form>
 						</div>
