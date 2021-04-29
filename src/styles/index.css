@@ -87,3 +87,9 @@ h6 {
 	width: 1200px;
 	margin: 0 auto;
 }
+
+@media screen and (max-width: 1200px) {
+	.main-container {
+		width: 95%;
+	}
+}
