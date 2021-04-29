@@ -1,8 +1,57 @@
+import styled from 'styled-components';
+import { mediaQueries } from '../styles/mediaQueries';
+
+const AboutWrapper = styled.div`
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	padding: 0px 50px 40px 50px;
+	gap: 100px;
+
+	${mediaQueries('desktop1')`
+		grid-gap: 40px;
+	`};
+
+	${mediaQueries('desktop3')`
+		grid-gap: 70px;
+	`};
+
+	${mediaQueries('mobile1')`
+		padding: 10px;
+		padding-bottom: 25px;
+		grid-gap: 1em;
+	`};
+
+	${mediaQueries('mobile1')`
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	`};
+`;
+
+const SkillsWrapper = styled.div`
+	display: grid;
+	align-content: center;
+	text-align: center;
+`;
+
+const SkillsList = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+	background-color: var(--previewShadow);
+
+	ul {
+		list-style-type: none;
+	}
+
+	${mediaQueries('mobile2')`
+		justify-content: left;
+		margin-right: 15px;
+	`};
+`;
+
 const About = () => {
 	return (
 		<section className='s2'>
 			<div className='main-container'>
-				<div className='about-wrapper'>
+				<AboutWrapper>
 					<div id='about'>
 						<h4>More About Me</h4>
 
@@ -20,7 +69,7 @@ const About = () => {
 						</p>
 					</div>
 
-					<div className='skills'>
+					<SkillsWrapper>
 						<h4>TOP EXPERTISE</h4>
 
 						<p>
@@ -30,7 +79,7 @@ const About = () => {
 							</a>
 						</p>
 
-						<div id='skills'>
+						<SkillsList>
 							<ul>
 								<li>JavaScript</li>
 								<li>HTML/CSS</li>
@@ -47,9 +96,9 @@ const About = () => {
 								<li>PostgreSQL</li>
 								<li>MySQL</li>
 							</ul>
-						</div>
-					</div>
-				</div>
+						</SkillsList>
+					</SkillsWrapper>
+				</AboutWrapper>
 			</div>
 		</section>
 	);
