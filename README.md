@@ -11,8 +11,10 @@ This is my personal porfolio site built from scratch. Nothing but good old fashi
 ## Technologies Used
 
 -   <a target='_blank' href='https://reactjs.org/'>React.js</a>
+-   <a target='_blank' href='https://styled-components.com/'>Styled Components</a>
 -   <a target='_blank' href='https://pages.github.com/'>Github Pages</a>
 -   <a target='_blank' href='https://www.npmjs.com/package/gh-pages'>gh-pages npm package</a>
+
 
 &nbsp;
 
