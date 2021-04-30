@@ -120,6 +120,37 @@ const BrowserDot = styled.div`
 	}
 `;
 
+const Menu = styled.div`
+	transform: translate(-20%, -5%);
+	width: 40px;
+	padding-top: 5px;
+	padding-right: 5px;
+
+	&:before,
+	&:after,
+	div {
+		background: var(--secondaryText);
+		content: '';
+		display: block;
+		height: 6px;
+		border-radius: 3px;
+		margin: 5px 0;
+		transition: 0.5s;
+	}
+
+	&:hover:before {
+		transform: translateY(11px) rotate(135deg);
+	}
+
+	&:hover:after {
+		transform: translateY(-11px) rotate(-135deg);
+	}
+
+	&:hover div {
+		transform: scale(0);
+	}
+`;
+
 const ProfilePic = styled.img`
 	display: block;
 	margin: 0 auto;
@@ -226,9 +257,10 @@ const Intro = () => {
 								</a>
 							</li>
 						</Navigation>
-						{/* <div class='center'>
+
+						{/* <Menu>
 							<div></div>
-						</div> */}
+						</Menu> */}
 					</NavWrapper>
 
 					<LeftColumn>

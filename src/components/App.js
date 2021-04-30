@@ -1,6 +1,6 @@
 import Intro from './Intro';
 import About from './About';
-import Portfolio from './Portfolio';
+import Porfolio from './Porfolio';
 import Contact from './Contact';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 
 			<About />
 
-			<Portfolio />
+			<Porfolio />
 
 			<Contact />
 		</div>
