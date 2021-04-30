@@ -147,7 +147,7 @@ const Portfolio = () => {
 							</form>
 						</PostPreview>
 						<Thumbnail>
-							<img alt='scarebnb' src='./assets/scarebnb.png' />
+							<img alt='scarebnb' src='./assets/scarebnb.webp' />
 						</Thumbnail>
 					</Post>
 
@@ -170,7 +170,7 @@ const Portfolio = () => {
 							</form>
 						</PostPreview>
 						<Thumbnail>
-							<img alt='JTWENL' src='./assets/JTWENL.png' />
+							<img alt='JTWENL' src='./assets/JTWENL.webp' />
 						</Thumbnail>
 					</Post>
 				</PostWrapper>

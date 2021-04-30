@@ -264,7 +264,7 @@ const Intro = () => {
 					</NavWrapper>
 
 					<LeftColumn>
-						<ProfilePic src='./assets/profile.jpg' alt='profile' />
+						<ProfilePic src='./assets/profile.webp' alt='profile' />
 					</LeftColumn>
 
 					<RightColumn>
