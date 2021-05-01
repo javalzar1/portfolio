@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { mediaQueries } from '../styles/mediaQueries';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const IntroWrapper = styled.div`
 	background-color: var(--secondaryColor);
@@ -236,12 +236,12 @@ const Corner = styled.div`
 `;
 
 const Intro = () => {
-	const [open, setOpen] = useState(false);
+	// const [open, setOpen] = useState(false);
 
-	function handleClick() {
-		console.log(open);
-		setOpen((prev) => !prev);
-	}
+	// function handleClick() {
+	// 	console.log(open);
+	// 	setOpen((prev) => !prev);
+	// }
 
 	return (
 		<section className='s1'>
