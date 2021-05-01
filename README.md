@@ -27,7 +27,6 @@ This is my personal porfolio site built from scratch. Nothing but good old fashi
 #### Any Question on my site or technologies used do not hesitate to reach out!
 
 &nbsp;
-&nbsp;
 
 <a target='_blank' href='https://www.linkedin.com/in/javierzarate17/'>LinkedIn</a>
 &nbsp;
