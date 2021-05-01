@@ -36,6 +36,7 @@ const SkillsList = styled.div`
 	display: flex;
 	justify-content: space-evenly;
 	background-color: var(--previewShadow);
+	border-radius: 5px;
 
 	ul {
 		list-style-type: none;

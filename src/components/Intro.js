@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import { mediaQueries } from '../styles/mediaQueries';
+import { useState } from 'react';
 
 const IntroWrapper = styled.div`
 	background-color: var(--secondaryColor);
 	border: 1px solid var(--borderColor);
-	border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 5px 5px;
 
 	box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -17,6 +18,7 @@ const IntroWrapper = styled.div`
 		'nav-wrapper nav-wrapper'
 		'left-column right-column';
 	margin-top: 25px;
+	margin-bottom: 25px;
 
 	${mediaQueries('desktop1')`
 		grid-template-columns: 1fr;
@@ -70,6 +72,7 @@ const LeftColumn = styled.div`
 	padding-top: 100px;
 	padding-bottom: 50px;
 	background-color: #fff;
+	border-radius: 5px;
 
 	${mediaQueries('mobile1')`
 		padding-top: 50px;
@@ -83,6 +86,7 @@ const RightColumn = styled.div`
 	display: grid;
 	align-content: center;
 	background-color: #fff;
+	border-radius: 5px;
 
 	${mediaQueries('desktop1')`
 		justify-content: center;
@@ -157,7 +161,8 @@ const ProfilePic = styled.img`
 	height: 300px;
 	width: 230px;
 	object-fit: fill;
-	border: 2px solid var(--borderColor);
+	border: 1px solid var(--borderColor);
+	border-radius: 5px;
 `;
 
 const PreviewShadow = styled.div`
@@ -166,6 +171,7 @@ const PreviewShadow = styled.div`
 	height: 180px;
 	padding-left: 30px;
 	padding-top: 30px;
+	border-radius: 5px;
 
 	${mediaQueries('mobile1')`
 		padding-top: 15px;
@@ -230,6 +236,13 @@ const Corner = styled.div`
 `;
 
 const Intro = () => {
+	const [open, setOpen] = useState(false);
+
+	function handleClick() {
+		console.log(open);
+		setOpen((prev) => !prev);
+	}
+
 	return (
 		<section className='s1'>
 			<div className='main-container'>
@@ -258,7 +271,7 @@ const Intro = () => {
 							</li>
 						</Navigation>
 
-						{/* <Menu>
+						{/* <Menu onClick={handleClick}>
 							<div></div>
 						</Menu> */}
 					</NavWrapper>

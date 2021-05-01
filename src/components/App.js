@@ -2,6 +2,7 @@ import Intro from './Intro';
 import About from './About';
 import Porfolio from './Porfolio';
 import Contact from './Contact';
+// import Skills from './Skills';
 
 function App() {
 	return (
@@ -13,6 +14,8 @@ function App() {
 			<Porfolio />
 
 			<Contact />
+
+			{/* <Skills /> */}
 		</div>
 	);
 }

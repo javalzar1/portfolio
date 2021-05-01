@@ -4,6 +4,7 @@ export const breakpoints = {
 	desktop3: 1000,
 	mobile1: 475,
 	mobile2: 360,
+	sm: 600,
 };
 
 export const mediaQueries = (key) => {

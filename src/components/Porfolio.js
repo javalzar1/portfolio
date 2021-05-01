@@ -33,6 +33,7 @@ const Post = styled.div`
 	background-color: #fff;
 
 	border: 1px solid var(--borderColor);
+	border-radius: 4px;
 	box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -49,6 +50,7 @@ const Post = styled.div`
 
 const PostPreview = styled.div`
 	grid-area: post-preview;
+	border-radius: 4px;
 	background-color: #fff;
 	padding: 25px 0px 25px 25px;
 `;
@@ -84,10 +86,12 @@ const Button = styled.input`
 	font-weight: 500;
 	letter-spacing: 0.01em;
 	color: #fff;
-	background-color: #6c757d;
+	background-color: #959595e6;
 
 	&:hover {
-		background-color: #5b6065;
+		background-color: #6c757db8;
+		box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+		transform: translateY(1px) scale(0.95);
 	}
 
 	${mediaQueries('desktop1')`
@@ -107,7 +111,7 @@ const Thumbnail = styled.div`
 		max-width: 400px;
 		max-height: 400px;
 		border: 1px solid var(--borderColor);
-		border-radius: 5px;
+		border-radius: 4px;
 	}
 
 	${mediaQueries('desktop3')`
