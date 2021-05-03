@@ -131,7 +131,7 @@ const Thumbnail = styled.div`
 
 const Portfolio = () => {
 	return (
-		<section id='portfolio' className='s1'>
+		<section id='portfolio' className='s2'>
 			<div className='main-container'>
 				<h3 style={{ textAlign: 'center' }}>Check out my work</h3>
 

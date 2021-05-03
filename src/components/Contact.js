@@ -75,7 +75,7 @@ const ContactItem = styled.a`
 	width: 300px;
 	max-width: 300px;
 	padding-bottom: 40px;
-	background-color: var(--lightMainColor);
+	background-color: #fff;
 
 	h6 {
 		text-align: center;
@@ -110,7 +110,7 @@ const Footer = styled.footer`
 `;
 const Contact = () => {
 	return (
-		<section id='contact' className='s2'>
+		<section id='contact' className='s1'>
 			<div className='main-container'>
 				<h3 style={{ textAlign: 'center' }}>Contact</h3>
 				<ContactWrapper>

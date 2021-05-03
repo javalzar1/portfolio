@@ -7,6 +7,14 @@ const AboutWrapper = styled.div`
 	padding: 0px 50px 40px 50px;
 	gap: 100px;
 
+	h4 {
+		text-align: center;
+	}
+
+	p {
+		font-size: 24px;
+	}
+
 	${mediaQueries('desktop1')`
 		grid-gap: 40px;
 	`};
@@ -23,28 +31,6 @@ const AboutWrapper = styled.div`
 
 	${mediaQueries('mobile1')`
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	`};
-`;
-
-const SkillsWrapper = styled.div`
-	display: grid;
-	align-content: center;
-	text-align: center;
-`;
-
-const SkillsList = styled.div`
-	display: flex;
-	justify-content: space-evenly;
-	background-color: var(--previewShadow);
-	border-radius: 5px;
-
-	ul {
-		list-style-type: none;
-	}
-
-	${mediaQueries('mobile2')`
-		justify-content: left;
-		margin-right: 15px;
 	`};
 `;
 
@@ -69,36 +55,6 @@ const About = () => {
 							thing.
 						</p>
 					</div>
-
-					<SkillsWrapper>
-						<h4>TOP EXPERTISE</h4>
-
-						<p>
-							Fullstack developer with a focus on React.js and Node. <br />
-							<a target='_blank' href='./assets/Javier_Zarate.pdf'>
-								Download Resume
-							</a>
-						</p>
-
-						<SkillsList>
-							<ul>
-								<li>JavaScript</li>
-								<li>HTML/CSS</li>
-								<li>Express</li>
-								<li>React</li>
-								<li>Node</li>
-								<li>MongoDB</li>
-							</ul>
-							<ul>
-								<li>C++</li>
-								<li>Python</li>
-								<li>HTML/CSS</li>
-								<li>AWS</li>
-								<li>PostgreSQL</li>
-								<li>MySQL</li>
-							</ul>
-						</SkillsList>
-					</SkillsWrapper>
 				</AboutWrapper>
 			</div>
 		</section>
