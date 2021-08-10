@@ -15,7 +15,6 @@ This is my personal porfolio site built from scratch. Nothing but good old fashi
 -   <a target='_blank' href='https://pages.github.com/'>Github Pages</a>
 -   <a target='_blank' href='https://www.npmjs.com/package/gh-pages'>gh-pages npm package</a>
 
-
 &nbsp;
 
 ### Check Out My Page
