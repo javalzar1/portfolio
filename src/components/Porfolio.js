@@ -140,11 +140,17 @@ const Portfolio = () => {
 						<PostPreview>
 							<PostTitle>Rooted. (Soon to be Deployed)</PostTitle>
 							<PostIntro>
-								<b>Made with:</b> JavaScript, React.js, Gatsby.js, HTML, CSS, Styled-Components, ShopifyAPI
+								<b>Made with:</b> JavaScript, React.js, Gatsby.js, HTML, CSS, Styled-Components,
+								ShopifyAPI
 							</PostIntro>
 							<PostContent>
-								Rooted is an online eCommerce store for natural health supplements. A Gatsby.js application built using Shopify's API to handle backend and payments.
-								Checkout the customers <a href="https://www.instagram.com/rooted_fambam/">content</a> in the meantime!
+								Rooted is an online eCommerce store for natural health supplements. A Gatsby.js
+								application built using Shopify's API to handle backend and payments. Checkout the
+								customers{' '}
+								<a href='https://www.instagram.com/rooted_fambam/' target='_blank' rel='noreferrer'>
+									content
+								</a>{' '}
+								in the meantime!
 							</PostContent>
 							<form action='https://github.com/javier-zarate/rooted' target='_blank'>
 								<Button type='submit' value='Code' />
