@@ -145,7 +145,7 @@ const Portfolio = () => {
 							</PostIntro>
 							<PostContent>
 								Rooted is an online eCommerce store for natural health supplements. A Gatsby.js
-								application built using Shopify's API to handle backend and payments. Checkout the
+								application built using Shopify's API to handle backend and payments. Check out the
 								customers{' '}
 								<a href='https://www.instagram.com/rooted_fambam/' target='_blank' rel='noreferrer'>
 									content
