@@ -8,6 +8,8 @@ This is my personal porfolio site built from scratch. Nothing but good old fashi
 
 &nbsp;
 
+![Google PageSpeed](https://img.shields.io/badge/Google%20PageSpeed-96-blue)
+
 ## Technologies Used
 
 -   <a target='_blank' href='https://reactjs.org/'>React.js</a>
