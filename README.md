@@ -8,6 +8,9 @@ This is my personal porfolio site built from scratch. Nothing but good old fashi
 
 &nbsp;
 
+![Google PageSpeed](https://img.shields.io/badge/Google%20PageSpeed-96-blue)
+[![Latest Github Release](https://img.shields.io/github/v/tag/javier-zarate/rooted?label=release)](https://github.com/javier-zarate/javier-zarate.github.io/releases/tag/1)
+
 ## Technologies Used
 
 -   <a target='_blank' href='https://reactjs.org/'>React.js</a>
