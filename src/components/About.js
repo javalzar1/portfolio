@@ -1,5 +1,8 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import { mediaQueries } from '../styles/mediaQueries';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const AboutWrapper = styled.div`
 	display: grid;
@@ -35,8 +38,12 @@ const AboutWrapper = styled.div`
 `;
 
 const About = () => {
+	useEffect(() => {
+		Aos.init({ duration: 2000 });
+	}, []);
+
 	return (
-		<section className='s2'>
+		<section className='s2' data-aos="fade-up">
 			<div className='main-container'>
 				<AboutWrapper>
 					<div id='about'>

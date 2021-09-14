@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import { mediaQueries } from '../styles/mediaQueries';
-// import { useState } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const IntroWrapper = styled.div`
 	background-color: var(--secondaryColor);
@@ -124,37 +126,6 @@ const BrowserDot = styled.div`
 	}
 `;
 
-const Menu = styled.div`
-	transform: translate(-20%, -5%);
-	width: 40px;
-	padding-top: 5px;
-	padding-right: 5px;
-
-	&:before,
-	&:after,
-	div {
-		background: var(--secondaryText);
-		content: '';
-		display: block;
-		height: 6px;
-		border-radius: 3px;
-		margin: 5px 0;
-		transition: 0.5s;
-	}
-
-	&:hover:before {
-		transform: translateY(11px) rotate(135deg);
-	}
-
-	&:hover:after {
-		transform: translateY(-11px) rotate(-135deg);
-	}
-
-	&:hover div {
-		transform: scale(0);
-	}
-`;
-
 const ProfilePic = styled.img`
 	display: block;
 	margin: 0 auto;
@@ -236,12 +207,9 @@ const Corner = styled.div`
 `;
 
 const Intro = () => {
-	// const [open, setOpen] = useState(false);
-
-	// function handleClick() {
-	// 	console.log(open);
-	// 	setOpen((prev) => !prev);
-	// }
+	useEffect(() => {
+		Aos.init({ duration: 2000 });
+	}, []);
 
 	return (
 		<section className='s1'>
@@ -277,10 +245,10 @@ const Intro = () => {
 					</NavWrapper>
 
 					<LeftColumn>
-						<ProfilePic src='./assets/profile.webp' alt='profile' />
+						<ProfilePic src='./assets/profile.webp' alt='profile' data-aos="fade-right"/>
 					</LeftColumn>
 
-					<RightColumn>
+					<RightColumn data-aos="fade-left">
 						<PreviewShadow>
 							<Preview>
 								<Corner id='corner-tl'></Corner>

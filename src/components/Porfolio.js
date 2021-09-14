@@ -1,5 +1,8 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import { mediaQueries } from '../styles/mediaQueries';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const PostWrapper = styled.div`
 	display: grid;
@@ -130,8 +133,11 @@ const Thumbnail = styled.div`
 `;
 
 const Portfolio = () => {
+	useEffect(() => {
+		Aos.init({ duration: 2000 });
+	}, []);
 	return (
-		<section id='portfolio' className='s2'>
+		<section id='portfolio' className='s2' data-aos="fade-up">
 			<div className='main-container'>
 				<h3 style={{ textAlign: 'center' }}>Check out my work</h3>
 

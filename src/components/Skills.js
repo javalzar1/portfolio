@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
-import { mediaQueries } from '../styles/mediaQueries';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const SkillsWrapper = styled.div`
 	display: grid;
@@ -67,9 +69,13 @@ const CardWide = styled(Card)`
 `;
 
 const Skills = () => {
+	useEffect(() => {
+		Aos.init({duration: 2000})
+	}, [])
+
 	return (
 		<section className='s1'>
-			<div className='main-container'>
+			<div className='main-container' data-aos="fade-up">
 				<h3 style={{ textAlign: 'center' }}>Skills</h3>
 				<SkillsWrapper>
 					<CardWide
@@ -149,9 +155,11 @@ const Skills = () => {
 					<Card
 						style={{
 							backgroundImage:
-								"url('https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2089&q=80')",
+								"url('https://images.unsplash.com/photo-1513563568283-f43b7e3d8de5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1486&q=80')",
 						}}
-					></Card>
+					>
+						<Text>Python</Text>
+					</Card>
 					<Card
 						style={{
 							backgroundImage:

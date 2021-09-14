@@ -1,5 +1,8 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
 import { mediaQueries } from '../styles/mediaQueries';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const ContactWrapper = styled.div`
 	display: grid;
@@ -109,9 +112,13 @@ const Footer = styled.footer`
 	padding-bottom: 10px;
 `;
 const Contact = () => {
+	useEffect(() => {
+		Aos.init({ duration: 2000 });
+	}, []);
+
 	return (
 		<section id='contact' className='s1'>
-			<div className='main-container'>
+			<div className='main-container' data-aos="fade-up">
 				<h3 style={{ textAlign: 'center' }}>Contact</h3>
 				<ContactWrapper>
 					<Email>
