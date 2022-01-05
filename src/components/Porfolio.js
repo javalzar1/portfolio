@@ -81,10 +81,6 @@ const PostContent = styled.p`
 	`}
 `;
 
-const ButtonFlex = styled.div`
-	display: flex;
-`;
-
 const Button = styled.input`
 	border: 1px solid var(--borderColor);
 	border-radius: 5px;
@@ -136,6 +132,36 @@ const Thumbnail = styled.div`
 	`}
 `;
 
+const SiteLink = styled.div`
+	img:hover {
+		animation: shake 0.5s;
+		animation-iteration-count: 1;
+	}
+
+	@keyframes shake {
+		10%,
+		90% {
+			transform: translate3d(-1px, 0, 0);
+		}
+
+		20%,
+		80% {
+			transform: translate3d(2px, 0, 0);
+		}
+
+		30%,
+		50%,
+		70% {
+			transform: translate3d(-4px, 0, 0);
+		}
+
+		40%,
+		60% {
+			transform: translate3d(4px, 0, 0);
+		}
+	}
+`;
+
 const Portfolio = () => {
 	useEffect(() => {
 		Aos.init({ duration: 2000 });
@@ -161,17 +187,16 @@ const Portfolio = () => {
 									content!
 								</a>
 							</PostContent>
-							<ButtonFlex>
-								<form action='https://www.rootedfamily.store/' target='_blank'>
-									<Button type='submit' value='Site' style={{ marginRight: "10px"}}/>
-								</form>
-								<form action='https://github.com/javier-zarate/rooted' target='_blank'>
-									<Button type='submit' value='Code' />
-								</form>
-							</ButtonFlex>
+							<form action='https://github.com/javier-zarate/rooted' target='_blank'>
+								<Button type='submit' value='Code' />
+							</form>
 						</PostPreview>
 						<Thumbnail>
-							<img alt='rootedfamily' src='./assets/rooted.webp' />
+							<SiteLink>
+								<a href='https://www.rootedfamily.store/' target='_blank' rel='noreferrer'>
+									<img alt='rootedfamily' src='./assets/rooted.webp' />
+								</a>
+							</SiteLink>
 						</Thumbnail>
 					</Post>
 
@@ -183,7 +208,7 @@ const Portfolio = () => {
 							</PostIntro>
 							<PostContent>
 								Scarebnb is an online vacation rental marketplace with a mysterious twist. A full-stack
-								app for those who want to book a spooky fun get away.{' '}
+								app for those who want to book a spooky fun getaway.{' '}
 							</PostContent>
 							<form action='https://github.com/scarebnb/scarebnb-reviews/' target='_blank'>
 								<Button type='submit' value='Code' />
