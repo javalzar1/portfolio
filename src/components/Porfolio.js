@@ -171,7 +171,7 @@ const Portfolio = () => {
 							</ButtonFlex>
 						</PostPreview>
 						<Thumbnail>
-							<img alt='rooted' src='./assets/rooted.webp' />
+							<img alt='rootedfamily' src='./assets/rooted.webp' />
 						</Thumbnail>
 					</Post>
 
