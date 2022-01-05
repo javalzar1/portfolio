@@ -81,6 +81,10 @@ const PostContent = styled.p`
 	`}
 `;
 
+const ButtonFlex = styled.div`
+	display: flex;
+`;
+
 const Button = styled.input`
 	border: 1px solid var(--borderColor);
 	border-radius: 5px;
@@ -137,14 +141,14 @@ const Portfolio = () => {
 		Aos.init({ duration: 2000 });
 	}, []);
 	return (
-		<section id='portfolio' className='s2' data-aos="fade-up">
+		<section id='portfolio' className='s2' data-aos='fade-up'>
 			<div className='main-container'>
 				<h3 style={{ textAlign: 'center' }}>Check out my work</h3>
 
 				<PostWrapper>
 					<Post>
 						<PostPreview>
-							<PostTitle>Rooted. (Soon to be Deployed)</PostTitle>
+							<PostTitle>Rooted</PostTitle>
 							<PostIntro>
 								<b>Made with:</b> JavaScript, React.js, Gatsby.js, HTML, CSS, Styled-Components,
 								ShopifyAPI
@@ -154,16 +158,20 @@ const Portfolio = () => {
 								application built using Shopify's API to handle backend and payments. Check out the
 								customers{' '}
 								<a href='https://www.instagram.com/rooted_fambam/' target='_blank' rel='noreferrer'>
-									content
-								</a>{' '}
-								in the meantime!
+									content!
+								</a>
 							</PostContent>
-							<form action='https://github.com/javier-zarate/rooted' target='_blank'>
-								<Button type='submit' value='Code' />
-							</form>
+							<ButtonFlex>
+								<form action='https://www.rootedfamily.store/' target='_blank'>
+									<Button type='submit' value='Site' style={{ marginRight: "10px"}}/>
+								</form>
+								<form action='https://github.com/javier-zarate/rooted' target='_blank'>
+									<Button type='submit' value='Code' />
+								</form>
+							</ButtonFlex>
 						</PostPreview>
 						<Thumbnail>
-							<img alt='scarebnb' src='./assets/under_construction.webp' />
+							<img alt='rooted' src='./assets/rooted.webp' />
 						</Thumbnail>
 					</Post>
 
