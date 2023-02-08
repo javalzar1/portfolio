@@ -103,7 +103,7 @@ const Skills = () => {
 					<CardTall
 						style={{
 							backgroundImage:
-								"url('https://cdn.evilmartians.com/front/posts/optimizing-react-virtual-dom-explained/cover-a1d5b40.png')",
+								"url('https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/templates/reactt2-dark_1200x303.png?sfvrsn=f4b34493_0')",
 						}}
 					>
 						<Text style={{ top: '50px' }}>React</Text>
